@@ -580,6 +580,41 @@
             color: var(--gray);
         }
 
+        /* Update the existing footer styles */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+/* Update social links in footer */
+.social-links a {
+    color: var(--light);
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* Update copyright text */
+.copyright {
+    margin-top: 2rem;
+    color: var(--gray);
+}
+
+/* Ensure footer text stays visible in dark mode */
+[data-theme="dark"] footer {
+    background-color: #121212; /* Slightly lighter than pure black for better contrast */
+}
+
+[data-theme="dark"] .copyright {
+    color: #b0b0b0; /* Lighter gray for better visibility */
+}
+
         /* Responsive Design */
         @media (max-width: 1024px) {
             .hero h1 {
